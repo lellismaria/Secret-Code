@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret Code</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/>
+  </head>
+    <body>
+        <main>
+            <header>
+                <div id="parteSuperior">
+                    <h1 class="titulo">Encriptador</h1>
+                </div>
+            </header>
+
+            <div id="txt">
+                <div></div>
+                <div>
+                    <textarea class="text" rows="15" id="entrada" placeholder="Digite seu texto aqui" autofocus="true" oninput="changeText(this.value)" required></textarea>
+                </div>
+                <div>
+                    <textarea class="text" rows="15" id="saida" placeholder="Texto criptografado" disabled></textarea>
+                </div>
+                <div></div>
+            </div>
+            <div id="troca">
+                <div id="alerta">
+                        </i><p>&nbsp;Somente letras minúsculas e sem acento</p>
+                    </div>
+                </div>
+                <div id="botoes">
+                    <button onclick="encriptar()" class="btns">Criptografar</button>
+                    <button onclick="descriptar()" class="btns">Descriptografar</button>
+                    <button onclick="copiar()" class="btns">Copiar</button>
+                    <button onclick="limpar()" class="btns">Limpar</button>
+                </div>
+            </div>
+            
+            <footer>
+                <p class="copyright">&copy; Desenvolvido por Maria Emília - 2022</p>
+            </footer>
+            <script src="https://kit.fontawesome.com/e801e4a6d3.js" crossorigin="anonymous"></script>
+            <script src="js/criptografar.js"></script>
+            <script src="js/descriptografar.js"></script>
+            <script src="js/btns.js"></script>
+  </body>
+</html>
